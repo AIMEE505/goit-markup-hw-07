@@ -306,6 +306,7 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     text-transform: capitalize;
     color: #2e2f42;
     margin-bottom: 72px;
+    display: block;
 
 }
 
@@ -313,11 +314,12 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 margin: 8px;
 }
 .section-four-list {
-  display: block;
-  flex-wrap: wrap;
-  row-gap: 72px;
-  column-gap: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
   justify-content: center;
+  align-items: center;
+  padding: 0;
    }
 
 .listli{
@@ -1012,7 +1014,7 @@ cursor: pointer;
       row-gap: 72px;
       column-gap: 24px; */
 
-      --card-width: 170px;
+   
     display: flex;
     flex-wrap: wrap;
     column-gap: 30px;
