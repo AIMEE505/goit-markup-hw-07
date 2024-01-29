@@ -298,7 +298,6 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     background-color: #F4F4FD;
     padding: 120px 0;
     margin: 0 auto;
-    max-width: 1140px;
 }
 .section-four-title{    
     font-size: 36px;
@@ -512,13 +511,11 @@ border-top: none;
 }
 
 .list-forte-points {
- 
-display: flex;
-  
-    align-items: left;
-    gap: 30px;
-    flex-wrap: wrap;
-    padding: 0;
+
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+
 }
 
 
@@ -1017,12 +1014,11 @@ cursor: pointer;
     }
 
     .list-forte-points {
-   
-flex-wrap: nowrap;
-width: 356px;
-flex-direction: column;
-align-items: flex-start;
-gap: 8px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+     row-gap: 72px;
+     column-gap: 24px;
   }
 .list-item{
 max-width: 356px;
@@ -1047,6 +1043,22 @@ max-width: 768px;
 justify-content: center;
 align-items: center;
 gap: 96px;
+}
+
+.footercontainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+align-items: center;
+row-gap: 72px;
+column-gap: 24px;
+}
+
+.ffcontainer {
+  margin-right: 0;
+}
+.subscribecontainer{
+  margin: 0;
 }
   }
 
@@ -1074,12 +1086,13 @@ text-align: left;
       padding: 120px 0;
   }
 
-    .list-forte-points {
-      display: flex; 
- gap: 24px;
- flex-wrap: nowrap;
+  
+      .list-forte-points {
+        display: flex; 
+   gap: 24px;
+   flex-wrap: nowrap;
+    }
 
-  }
   
 
   .doing {
@@ -1116,5 +1129,26 @@ flex-wrap: nowrap;
 .customerslisticons{
   width: 168px;
 width: calc((100% - 120px) / 6);
+}
+
+.ffcontainer{
+  margin-right: 120px;
+}
+
+.footercontainer {
+  display: flex;
+  flex-wrap: nowrap;
+
+align-items: baseline;
+row-gap: 0;
+column-gap: 0;
+
+}
+
+.ffcontainer {
+  margin-right: 120px;
+}
+.subscribecontainer{
+  margin-left: 80px;
 }
 }
