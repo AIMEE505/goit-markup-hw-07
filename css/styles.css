@@ -22,7 +22,7 @@
 
 
 .header{
-  display: block;
+  display: none;
     border-bottom: 1px solid #e7e9fc;
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 
@@ -317,7 +317,7 @@ margin: auto;
 }
 .section-four-list {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: nowrap;
   gap: 72px;
   justify-content: center;
@@ -327,7 +327,6 @@ margin: auto 82px;
    }
 
 .listli{
-    width: calc((100% - 72px) / 4);
 
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -459,7 +458,7 @@ border-top: none;
 }
 .footer{
     background-color: #2e2f42;
-   padding: var(--padding-vertical-global) 0;
+   padding: 98px 0;
     display: flex; 
     /* gap: 120px; */
 }
@@ -505,7 +504,7 @@ border-top: none;
 
 
 .forte-points {
- padding: var(--padding-vertical-global) 16px;
+ padding: 98px 16px;
 }
 
 .list-forte-points {
@@ -519,7 +518,7 @@ flex-direction: column;
 
 .doing {
   display: none;
-    padding-bottom: var(--padding-vertical-global);
+    padding-bottom: 98px;
 
 }
 
@@ -552,7 +551,7 @@ img {
 }
 
 .customers {
-    padding: var(--padding-vertical-global) 0;
+    padding: 98px 0;
 }
 
 .customers-title {
@@ -1065,11 +1064,7 @@ column-gap: 24px;
   }
 
   @media screen and (width >= 1158px) {
-    :root {
-
-      --padding-vertical-global: 232px;
-      --padding-horizontal-global: 156px;
-    }
+  
 
     .icons-color {
       display: flex;
