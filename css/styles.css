@@ -22,7 +22,7 @@
 
 
 .header{
-  display: block;
+
     border-bottom: 1px solid #e7e9fc;
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 
@@ -177,6 +177,7 @@
   cursor: pointer;
   display: block;
   align-items: center;
+  padding-top: 24px;
 
 }
 
@@ -186,24 +187,25 @@
 
 .nav-meniu{
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
 
 }
 
 .meniu-list {
     display: flex;
     gap: 40px;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .address{
     font-style: normal;
-    gap: 40px;
+ 
 }
 
 .address-list {
     display: flex;
-    gap: 40px;
+
     list-style-type: none;
 }
 
@@ -1067,12 +1069,6 @@ cursor: pointer;
       margin-top: 30px;
     }
   
-    .address-list {
-      display: flex;
-      flex-direction: column;
-      gap: 24px;
-      margin-top: 0;
-    }
   
     .container-nav {
       visibility: hidden;
@@ -1097,7 +1093,7 @@ cursor: pointer;
 
   @media screen and (width >= 768px) {
     .header{
-      display: flex;
+      display: contents;
     }
     .hero-header-cta{
       display: block;
@@ -1169,17 +1165,26 @@ column-gap: 24px;
 .hero-navbar-menu-button {
   display: none;
 }
-.hero-navbar-menu-button {
-  display: none;
-}
+
 .address-list {
-  display: block;
+  flex-direction: column;
   }
+  .nav-meniu{
+   
+    flex-direction: row;
+    align-items: center;
+
+}
+.mail-link{
+  padding: 8px 0;
+
+}
 }
   @media screen and (width >= 1158px) {
   
     .address-list {
-      display: flex;
+      flex-direction: row;
+      gap: 40px;
       }
 
     .icons-color {
@@ -1265,6 +1270,9 @@ column-gap: 0;
   min-width: 168px;
 
 }
+.mail-link{
+  padding: 24px 0;
 
+}
 
 }
