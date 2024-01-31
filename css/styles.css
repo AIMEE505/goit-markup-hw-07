@@ -1082,6 +1082,7 @@ cursor: pointer;
       bottom: 0;
       background-color: white;
       padding: 48px 31 0 40px;
+   
     }
     .hero-header-cta {
       display: flex;
@@ -1095,11 +1096,6 @@ cursor: pointer;
 
 
   @media screen and (width >= 768px) {
-    :root {
-
---padding-horizontal-global: 108px;
-
-    }
     .header{
       display: flex;
     }
@@ -1185,7 +1181,7 @@ column-gap: 24px;
     .address-list {
       display: flex;
       }
-    }
+
     .icons-color {
       display: flex;
     }
