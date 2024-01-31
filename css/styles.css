@@ -116,9 +116,7 @@
     margin-bottom: 16px;
 
 }
-.item{
-    width: calc((100% - 48px) / 3);
-   }
+
 
 .list{
     list-style: none;
@@ -663,7 +661,7 @@ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-b
 .emailsubmit {
     margin-top: 16px;
     border-radius: 4px;
-    width: 264px;
+    width: 100%;
 height: 40px;
 flex-shrink: 0;
 border: 1px solid #FFF;
@@ -690,8 +688,10 @@ margin-bottom: 16px;
 
 
 .footercontainer {
-    /* display: flex; */
-    align-items: baseline;
+display: flex;
+flex-direction: column;
+    align-items: center;
+    gap: 72px;
 
 }
 
@@ -728,7 +728,6 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    margin-top: 72px;
     align-items: center;
 }
 
@@ -765,9 +764,7 @@ font-family: "Roboto", sans-serif;
 }
 
 
-.subscribecontainer{
-  margin-top: 72px;
-}
+
 .footersubmit {
     color: #F4F4FD;
 }
@@ -1059,7 +1056,10 @@ cursor: pointer;
     transform: rotate(45deg);
   }
 
-
+.formsubmit{
+  display: flex;
+  flex-direction: column;
+}
 
   @media screen and (width < 768px) {
     .meniu-list {
@@ -1133,6 +1133,7 @@ row-gap: 64px;
 
 .footercontainer {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
 align-items: center;
@@ -1140,9 +1141,7 @@ row-gap: 72px;
 column-gap: 24px;
 }
 
-.ffcontainer {
-  margin-right: 0;
-}
+
 .subscribecontainer{
   margin: 0;
 }
@@ -1173,11 +1172,18 @@ column-gap: 24px;
    
     flex-direction: row;
     align-items: center;
-
 }
 .mail-link{
   padding: 8px 0;
+}
 
+.formsubmit{
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.sfcontainer{
+  align-items: flex-start;
 }
 }
   @media screen and (width >= 1158px) {
@@ -1236,16 +1242,10 @@ flex-wrap: nowrap;
   gap: 24px;
 }
 
-
-
-.ffcontainer{
-  margin-right: 120px;
-}
-
 .footercontainer {
-  display: flex;
-  flex-wrap: nowrap;
-
+ 
+ flex-direction: row;
+flex-wrap: nowrap;
 align-items: baseline;
 row-gap: 0;
 column-gap: 0;
@@ -1253,6 +1253,7 @@ column-gap: 0;
 }
 
 .ffcontainer {
+  flex-direction: column;
   margin-right: 120px;
 }
 .subscribecontainer{
@@ -1274,5 +1275,22 @@ column-gap: 0;
   padding: 24px 0;
 
 }
+.emailsubmit {
+ 
+  width: 264px;
 
+}
+
+.formsubmit{
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.footer{
+  padding: 100px 0;
+  gap: 120px;
+}
+.item{
+  width: calc((100% - 48px) / 3);
+ }
 }

@@ -15,10 +15,19 @@
   <body> 
 
     <header class="header">
+      <a class="logo-header link-header" href="./index.html" >Web<span class="logo-span">Studio</span></a>
+      
+      <button class="hero-navbar-menu-button hero-navbar-menu-button-light" data-menu-open>
+                <i data-feather="menu"></i>
+              </button>
+      <div class="container-nav container" data-menu >
+        <button class="hero-navbar-menu-button" data-menu-close>
+          <i data-feather="x"></i>
+        </button>
      <div class="container-nav container">
       <!--Meniul de navigare pentru alte pagini-->
       <nav class="nav-meniu">
-        <a class="logo link" href="./index.html">Web<span class="logo-span">Studio</span></a>
+        <a class="logo link-logo" href="./index.html">Web<span class="logo-span">Studio</span></a>
           <ul class="list meniu-list">
             <li>
              <a href="./index.html" class="studio-link link">Studio</a>
@@ -31,13 +40,15 @@
            </li>
           </ul>
         </nav>
-        <address class="address">
-         <ul class="address-list">
-       <li><a class="mail link mail-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li> 
-       <li><a class="mail link mail-link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
-     </ul>
-            </address>      
-          </div>
+        <div class="hero-header-cta">
+          <address class="address">
+           <ul class="address-list">
+         <li><a class="mail link mail-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li> 
+         <li><a class="mail link mail-link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+       </ul>
+              </address>  
+             </div>    
+            </div>
    </header>
     <main>
         <!--Filter-->
@@ -261,6 +272,7 @@
 
     <script src="./js/modal.js"></script>
     <script src="https://unpkg.com/feather-icons"></script>
+    
     <script>
       feather.replace();
     </script>
