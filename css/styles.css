@@ -1057,7 +1057,7 @@ cursor: pointer;
     transform: rotate(45deg);
   }
 
-  
+
 
   @media screen and (width < 768px) {
     .meniu-list {
@@ -1176,11 +1176,16 @@ column-gap: 24px;
 .hero-navbar-menu-button {
   display: none;
 }
+.address-list {
+  display: block;
   }
-
+}
   @media screen and (width >= 1158px) {
   
-
+    .address-list {
+      display: flex;
+      }
+    }
     .icons-color {
       display: flex;
     }
