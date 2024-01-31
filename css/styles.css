@@ -22,13 +22,13 @@
 
 
 .header{
-  display: none;
+  display: block;
     border-bottom: 1px solid #e7e9fc;
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 
 }
 .container-nav{
-    display: flex;
+    display: block;
     justify-content: space-between;
     max-width: 1158px;
 }
@@ -39,6 +39,7 @@
 }
 
 .logo {
+  display: none;
     font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: 800px;
@@ -50,11 +51,40 @@
     color: #4d5ae5;
     margin-right: 76px;
 }
+.logo-header {
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: 800px;
+  font-size: 18px;
+  line-height: 1.17em;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #4d5ae5;
+  margin-right: 76px;
+  margin-left: 16px;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.link-logo{
+  text-decoration: none;
+  display: none;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0, 0.2, 1);
+
+}
 
 .link{
     text-decoration: none;
     display: block;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0, 0.2, 1);
+
+}
+
+.link-header{
+  text-decoration: none;
+  display: block;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0, 0.2, 1);
 
 }
 
@@ -138,6 +168,20 @@
         position: relative;
         color: #404bbf;
 
+}
+
+.hero-navbar-menu-button {
+  margin-left: auto;
+  background: none;
+  border: black;
+  cursor: pointer;
+  display: block;
+  align-items: center;
+
+}
+
+.hero-navbar-menu-button-light {
+  color: black;
 }
 
 .nav-meniu{
@@ -1013,13 +1057,65 @@ cursor: pointer;
     transform: rotate(45deg);
   }
 
+  
+
+  @media screen and (width < 768px) {
+    .meniu-list {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      margin-top: 30px;
+    }
+  
+    .address-list {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      margin-top: 0;
+    }
+  
+    .container-nav {
+      visibility: hidden;
+      position: fixed;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      background-color: white;
+      padding: 48px 31 0 40px;
+    }
+    .hero-header-cta {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      margin-top: 64px;
+    }
+  }
+  
+  
+
+
   @media screen and (width >= 768px) {
     :root {
 
 --padding-horizontal-global: 108px;
 
     }
-
+    .header{
+      display: flex;
+    }
+    .hero-header-cta{
+      display: block;
+      gap:12px;
+    }
+    .container-nav{
+      display: flex;
+    }
+.logo{
+  display: flex;
+}
+.logo-header{
+  display: none;
+}
     .list-forte-points {
       display: flex;
       flex-direction: row;
@@ -1074,6 +1170,12 @@ column-gap: 24px;
 .sii-title{
   text-align: left;
 }
+.hero-navbar-menu-button {
+  display: none;
+}
+.hero-navbar-menu-button {
+  display: none;
+}
   }
 
   @media screen and (width >= 1158px) {
@@ -1090,6 +1192,10 @@ font-weight: 500;
 line-height: 24px; /* 120% */
 letter-spacing: 0.4px;
 
+    }
+    .hero-header-cta{
+      display: flex;
+      gap: 24px;
     }
 
     .forte-points {
@@ -1158,4 +1264,6 @@ column-gap: 0;
   min-width: 168px;
 
 }
+
+
 }
