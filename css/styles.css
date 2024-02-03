@@ -22,7 +22,7 @@
 
 
 .header{
-
+display: flex;
     border-bottom: 1px solid #e7e9fc;
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 
@@ -1248,17 +1248,16 @@ flex-wrap: nowrap;
 flex-wrap: nowrap;
 align-items: baseline;
 row-gap: 0;
-column-gap: 0;
+column-gap: 60px;
 
 }
 
 .ffcontainer {
   flex-direction: column;
-  margin-right: 120px;
 }
-.subscribecontainer{
-  margin-left: 80px;
-}
+
+
+  
 .customers {
   padding: 120px 0;
 }
@@ -1282,7 +1281,8 @@ column-gap: 0;
 }
 
 .formsubmit{
-  flex-direction: row;
+  display: block;
+  flex-direction: column;
   flex-wrap: nowrap;
 }
 
